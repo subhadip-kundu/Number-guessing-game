@@ -38,10 +38,12 @@ submitButton.addEventListener('click', (event) => {
             }
             else if (random < numberInput.value) {
                 instruction.innerText = "Guess a Small Number";
+                numberInput.value = '';
                 numberInput.focus();
             }
             else {
                 instruction.innerText = "Guess a Larger Number";
+                numberInput.value = '';
                 numberInput.focus();
             }
             count.innerText = count_value;
