@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#c1dcb9, #afafe3);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    text-align: center;
+    height: 17.5rem;
+    width: 21rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: .4rem .4rem 1.5rem #000000d7, -.4rem -.4rem 1.5rem #000000cf;
+    padding: 1rem .8rem;
+    font-weight: 400;
+    background: linear-gradient(#c1dcb9, #edefb9);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+    color: #000000;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+.header {
+    font-size: 1.2rem;
+}
+
+[name="level-options"] {
+    background-color: transparent;
+    font-weight: 700;
+    height: 1.4rem;
+}
+
+.range-between,
+.total-count {
+    border: 1px solid #000;
+    height: 1.5rem;
+    padding: 0 .5rem;
+    font-weight: 600;
+}
+
+.heading-guess-number {
+    font-weight: 700;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#number-input {
+    height: 1.7rem;
+    width: 4rem;
+    border: 1px solid #000;
+    text-align: center;
+    background-color: transparent;
+    outline:none;
+}
+
+[type="submit"],
+#restart-button {
+    background: linear-gradient(#dbfdd1, #c6c6ff);
+    height: 1.61rem;
+    border: 1px solid #000;
+    width: 5.5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 85%;
+    cursor: pointer;
+}
+
+#check-ans-button:hover,
+#restart-button:hover,
+#number-input:hover {
+    border: 1px solid #a20505;
+    color: #800080;
+}
+
+input::-webkit-inner-spin-button
+ {
+    display: none;
+}

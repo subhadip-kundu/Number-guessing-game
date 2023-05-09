@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h1 class="header">
+                Random Number Guessing Game
+            </h1>
+            <p class="level">
+                Game Level :
+                <span class="options">
+                    <select name="level-options" id="level-options">
+                        <option value="Easy">Easy</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+                </span>
+            </p>
+            <p>
+                Number Range is :
+                <span class="range-between">0 to 10</span>
+            </p>
+            <p>
+                Total Attempt :
+                <span class="total-count">0</span>
+            </p>
+            <p class="heading-guess-number">Guess The Number</p>
+            <div class="input-field">
+                <input type="number" name="number" id="number-input">
+                <button type="submit" id="check-ans-button">Check Ans</button>
+            </div>
+            <div><button type="reset" id="restart-button">Restart Game</button></div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
