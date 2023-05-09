@@ -17,14 +17,16 @@ numberInput.focus();
 levelOptions.addEventListener('change', () => {
     if (levelOptions.value === 'Medium') {
         rangeBetween.innerText = '0 to 50';
-        random = random * 5;
+        random = Math.floor(Math.random() * 10 *5);
     } else if (levelOptions.value === 'Hard') {
         rangeBetween.innerText = '0 to 100';
-        random = random * 10;
+        random = Math.floor(Math.random() * 10 *10);
     } else {
         rangeBetween.innerText = '0 to 10';
+        random = Math.floor(Math.random() * 10);
     }
 });
+
 
 submitButton.addEventListener('click', (event) => {
     if (numberInput.value != '') {
